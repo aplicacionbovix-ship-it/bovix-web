@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bovix | Software para ganadería de leche y levante</title>
+  <meta name="description" content="Bovix es la aplicación colombiana para administrar tu ganadería de leche y levante desde el celular: animales, producción de leche, sanidad, reproducción, potreros, finanzas y más. 30 días gratis." />
+
+  <!-- Open Graph: cómo se ve al compartir por WhatsApp -->
+  <meta property="og:title" content="Bovix · Software para ganadería de leche y levante" />
+  <meta property="og:description" content="Administra tu finca desde el celular. Animales ilimitados, todos los módulos, 30 días gratis." />
+  <meta property="og:url" content="https://bovix.site" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://bovix.site/assets/screens/captura-1.jpg" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="nav">
+  <a class="brand" href="#inicio">
+    <svg class="brand-tag" viewBox="0 0 100 120" aria-hidden="true"><path d="M44 0H56V18H62C75 18 85 28 85 41V100C85 111 76 120 65 120H35C24 120 15 111 15 100V41C15 28 25 18 38 18H44V0Z"/></svg>
+    BOVIX
+  </a>
+  <nav id="menuPrincipal">
+    <a href="#modulos">Módulos</a>
+    <a href="#capturas">La app</a>
+    <a href="#plan">Precio</a>
+    <a href="#video">Cómo se usa</a>
+    <a href="#faq">Preguntas</a>
+  </nav>
+  <div class="nav-derecha">
+    <a class="btn small" href="https://script.google.com/macros/s/AKfycbz-IR9hODzZfZOyxJQy6iNhVXgTR9B9fu-RdPg2iDRgwbD7ZT57sq3KBkpgEQb3ZUP3sw/exec" target="_blank" rel="noopener">Entrar</a>
+    <button class="hamburguesa" aria-label="Abrir menú" onclick="alternarMenu()">☰</button>
+  </div>
+</header>
+
+<main id="inicio">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero section">
+    <div class="heroText reveal">
+      <span class="badge">🇨🇴 Hecho en Colombia · Ganadería de leche y levante</span>
+      <h1>La finca completa, <em>en tu celular.</em></h1>
+      <p class="lead">Bovix es la aplicación para ganadería de leche y levante que reúne tus animales, la producción de leche, la sanidad, la reproducción, los potreros y las finanzas en un solo lugar. Sin cuadernos. Sin hojas perdidas.</p>
+      <div class="actions">
+        <a class="btn" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20probar%20Bovix%20gratis%20durante%2030%20d%C3%ADas" target="_blank" rel="noopener">Probar 30 días gratis</a>
+        <a class="btn ghost" href="#capturas">Ver la app por dentro</a>
+      </div>
+      <div class="prueba-social">
+        <span>✓ Sin tarjeta</span>
+        <span>✓ Animales ilimitados</span>
+        <span>✓ Soporte por WhatsApp</span>
+      </div>
+    </div>
+
+    <div class="phoneWrap reveal delay">
+      <div class="glow"></div>
+      <div class="phone">
+        <img id="phoneImage" src="assets/screens/captura-1.jpg" alt="Pantallas reales de la aplicación Bovix" />
+      </div>
+      <div class="puntos" id="puntosCarrusel" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- ============ ANTES / AHORA ============ -->
+  <section class="section problem reveal">
+    <div class="sectionHead">
+      <p class="eyebrow">Del cuaderno al celular</p>
+      <h2>Menos hojas. Más control.</h2>
+    </div>
+    <div class="beforeAfter">
+      <article class="antes">
+        <span class="emoji">📒</span>
+        <h3>Antes</h3>
+        <p>Cuadernos que se mojan, hojas que se pierden y datos que dependen de la memoria de alguien.</p>
+      </article>
+      <article class="ahora">
+        <span class="emoji">📱</span>
+        <h3>Con Bovix</h3>
+        <p>Cada animal, cada litro de leche y cada peso de la finca, registrado y consultable al instante.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ MÓDULOS CON DESCRIPCIÓN ============ -->
+  <section id="modulos" class="section reveal">
+    <div class="sectionHead">
+      <p class="eyebrow">Módulos</p>
+      <h2>Todo lo que pasa en una finca lechera y de levante, tiene su módulo.</h2>
+      <p class="sub">Toca cualquier módulo para ver qué hace.</p>
+    </div>
+
+    <div class="acordeon">
+
+      <details open>
+        <summary><span class="mod-icono">🐄</span> Animales <span class="flecha">▾</span></summary>
+        <p>El corazón de Bovix. Ficha completa de cada animal del hato: número, nombre, raza, categoría (vaca, novilla, ternero, levante), peso y estado. Es el censo de tu finca, siempre actualizado y siempre a la mano.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">🥛</span> Producción de leche <span class="flecha">▾</span></summary>
+        <p>Registra los litros de cada ordeño, por día y por vaca o por lote. Ve cómo se comporta la producción de la finca a lo largo del tiempo y detecta a tiempo cuándo una vaca baja su producción.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">📊</span> Liquidación de leche <span class="flecha">▾</span></summary>
+        <p>Calcula automáticamente cuánto te deben pagar por la leche entregada: litros del periodo por el precio pactado, listo para comparar contra lo que te paga el comprador. Se acabaron las cuentas a mano.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">💉</span> Sanidad <span class="flecha">▾</span></summary>
+        <p>Historial sanitario de cada animal: vacunas, desparasitaciones, tratamientos y productos aplicados, con fecha y responsable. Cuando llegue una visita del ICA o del veterinario, todo está registrado.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">🗓️</span> Calendario sanitario <span class="flecha">▾</span></summary>
+        <p>Programa protocolos preventivos que se repiten solos: baños cada semana, vitaminas cada mes, desparasitación cada 3 meses. Bovix te avisa cuando un protocolo está próximo a vencer para que nada se pase.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">🐮</span> Reproducción <span class="flecha">▾</span></summary>
+        <p>Seguimiento reproductivo completo del hato: celos, servicios (monta o inseminación), diagnósticos de preñez y fechas probables de parto. De un vistazo sabes cuántas están preñadas, cuántas vacías y cuáles esperan diagnóstico.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">🌱</span> Potreros <span class="flecha">▾</span></summary>
+        <p>Registra cada potrero de la finca con su área, uso y estado (ocupado o en descanso), con fechas de entrada y salida. Fundamental para manejar bien la rotación y cuidar la pastura.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">🔁</span> Movimiento de potreros <span class="flecha">▾</span></summary>
+        <p>Mueve lotes de animales entre potreros y deja el registro de cada traslado. Siempre sabes qué animales están en qué potrero y cuánto tiempo llevan ahí.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">📦</span> Inventario <span class="flecha">▾</span></summary>
+        <p>Control de insumos y productos de la finca: medicamentos, sales, concentrados, herramientas. Sabes qué hay, cuánto queda y cuándo toca comprar, antes de que haga falta.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">✅</span> Tareas <span class="flecha">▾</span></summary>
+        <p>Asigna trabajo al personal de la finca y confirma cuando queda hecho. Cada trabajador sabe qué le toca hoy, y tú sabes qué se hizo y qué quedó pendiente.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">📋</span> Protocolos de eventos <span class="flecha">▾</span></summary>
+        <p>Define una vez los pasos de un manejo (por ejemplo, el protocolo de un tratamiento) y Bovix genera las tareas agrupadas automáticamente cada vez que lo apliques.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">📝</span> Novedades <span class="flecha">▾</span></summary>
+        <p>El diario de la finca: nacimientos, muertes, ventas, compras y cualquier evento del día a día queda anotado con su fecha. Nada depende de la memoria.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">🧀</span> Queso <span class="flecha">▾</span></summary>
+        <p>Si transformas parte de la leche, registra la producción de queso: cuánta leche entró, cuánto queso salió y su destino. Ideal para fincas que venden leche y derivados.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">💰</span> Finanzas <span class="flecha">▾</span></summary>
+        <p>Ingresos y gastos de la operación, organizados por categoría. Al final del mes no estimas si la finca dio o no dio: lo ves en números reales.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">👥</span> Usuarios <span class="flecha">▾</span></summary>
+        <p>Crea usuarios para tus trabajadores con permisos según su rol. El administrador ve todo; el personal de campo ve solo lo que necesita para trabajar.</p>
+      </details>
+
+      <details>
+        <summary><span class="mod-icono">🤖</span> Inteligencia artificial <span class="flecha">▾</span></summary>
+        <p>Próximamente: pregúntale a Bovix por WhatsApp — "¿cuántos terneros nacieron esta semana?", "¿qué tareas de sanidad hay hoy?" — y recibe la respuesta al instante, sin abrir la app.</p>
+      </details>
+
+    </div>
+  </section>
+
+  <!-- ============ CAPTURAS ============ -->
+  <section id="capturas" class="section showcase reveal">
+    <div class="sectionHead">
+      <p class="eyebrow">La aplicación real</p>
+      <h2>Así se ve Bovix por dentro.</h2>
+      <p class="sub">Estas pantallas son del sistema funcionando hoy en fincas reales — no son diseños inventados. Desliza para verlas.</p>
+    </div>
+    <div class="screenGrid">
+      <figure><img src="assets/screens/captura-1.jpg" alt="Pantalla de Bovix" loading="lazy"></figure>
+      <figure><img src="assets/screens/captura-2.jpg" alt="Pantalla de Bovix" loading="lazy"></figure>
+      <figure><img src="assets/screens/captura-3.jpg" alt="Pantalla de Bovix" loading="lazy"></figure>
+      <figure><img src="assets/screens/captura-4.jpg" alt="Pantalla de Bovix" loading="lazy"></figure>
+      <figure><img src="assets/screens/captura-5.jpg" alt="Pantalla de Bovix" loading="lazy"></figure>
+      <figure><img src="assets/screens/captura-6.jpg" alt="Pantalla de Bovix" loading="lazy"></figure>
+      <figure><img src="assets/screens/captura-7.jpg" alt="Pantalla de Bovix" loading="lazy"></figure>
+      <figure><img src="assets/screens/captura-8.jpg" alt="Pantalla de Bovix" loading="lazy"></figure>
+      <figure><img src="assets/screens/captura-9.jpg" alt="Pantalla de Bovix" loading="lazy"></figure>
+    </div>
+  </section>
+
+  <!-- ============ PRECIO ============ -->
+  <section id="plan" class="section pricing reveal">
+    <div class="priceCard">
+      <p class="eyebrow">Plan de lanzamiento</p>
+      <h2>Plan Full</h2>
+
+      <div class="comparador">
+        <span>Menos de <strong>$2.400 al día</strong> — menos que un tinto con pan.</span>
+      </div>
+
+      <div class="price">$69.900 <span>/ mes</span></div>
+      <p class="muted">Una finca, animales ilimitados y <strong>todos</strong> los módulos activos. Sin planes recortados ni sorpresas.</p>
+      <ul>
+        <li>✅ 30 días gratis para probar sin compromiso</li>
+        <li>✅ Una finca incluida</li>
+        <li>✅ Animales ilimitados</li>
+        <li>✅ Todos los módulos, desde el primer día</li>
+        <li>✅ Soporte directo por WhatsApp</li>
+        <li>✅ Mejoras y módulos nuevos sin costo extra</li>
+      </ul>
+      <a class="btn grande" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20activar%20mi%20mes%20gratis%20de%20Bovix" target="_blank" rel="noopener">Quiero mi mes gratis</a>
+      <p class="mini-nota">Pruébalo un mes completo. Si no te sirve, no pagas nada.</p>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO / CÓMO SE USA ============ -->
+  <section id="video" class="section tutorial reveal">
+    <div class="sectionHead">
+      <p class="eyebrow">Cómo se usa</p>
+      <h2>Míralo funcionando, paso a paso.</h2>
+      <p class="sub">En el canal de YouTube de Bovix vamos publicando videos de cada módulo, grabados directamente desde la app en una finca real.</p>
+    </div>
+
+    <!--
+      ⬇️ PARA ACTIVAR EL VIDEO INCRUSTADO:
+      1. Abre tu video en YouTube y copia el ID (lo que va después de "watch?v=")
+      2. Reemplaza PEGA_AQUI_EL_ID en la línea de abajo
+      3. Borra la clase "oculto" del div videoWrap
+    -->
+    <div class="videoWrap oculto">
+      <iframe src="https://www.youtube-nocookie.com/embed/PEGA_AQUI_EL_ID" title="Bovix en YouTube" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <div class="actions center">
+      <a class="btn" href="https://www.youtube.com/@maicolbermudez8962" target="_blank" rel="noopener">▶ Ver videos en YouTube</a>
+    </div>
+  </section>
+
+  <!-- ============ CONFIABILIDAD ============ -->
+  <section id="confianza" class="section confianza reveal">
+    <div class="sectionHead">
+      <p class="eyebrow">Confiabilidad</p>
+      <h2>Hecho en una finca, no en una oficina.</h2>
+      <p class="sub">Bovix no es una idea de laboratorio: nació dentro de Ganadería B3, una finca lechera real en Colombia, y se usa todos los días para manejar el hato completo.</p>
+    </div>
+    <div class="statGrid">
+      <div class="stat"><strong>16</strong><span>módulos activos hoy</span></div>
+      <div class="stat"><strong>24/7</strong><span>acceso desde cualquier celular</span></div>
+      <div class="stat"><strong>Diarias</strong><span>copias de seguridad automáticas</span></div>
+      <div class="stat"><strong>100%</strong><span>de las acciones quedan en registro de auditoría</span></div>
+      <div class="stat"><strong>Google</strong><span>tus datos respaldados en la nube de Google</span></div>
+      <div class="stat"><strong>1 finca real</strong><span>donde Bovix se prueba antes de llegar a ti</span></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIÉNES CONFÍAN ============ -->
+  <section id="testimonios" class="section testimonios reveal">
+    <div class="sectionHead">
+      <p class="eyebrow">Confían en Bovix</p>
+      <h2>Gente de campo que ya lo usa y lo recomienda.</h2>
+    </div>
+    <div class="testiGrid">
+      <article class="testi destacado">
+        <p class="testi-texto">"Bovix nació aquí. Con él manejamos el hato completo todos los días: la leche de cada ordeño, la reproducción, la sanidad y las finanzas de la finca."</p>
+        <div class="testi-autor">
+          <span class="testi-avatar">B3</span>
+          <div><strong>Ganadería B3</strong><span>Finca lechera · Colombia</span></div>
+        </div>
+      </article>
+      <article class="testi">
+        <p class="testi-texto">"Lo uso en el trabajo del día a día en la finca. Las tareas llegan claras y todo lo que hago queda registrado sin papeleo."</p>
+        <div class="testi-autor">
+          <span class="testi-avatar">FB</span>
+          <div><strong>Freddy Bermúdez</strong><span>Trabajador de campo · Ganadería B3</span></div>
+        </div>
+      </article>
+      <article class="testi">
+        <p class="testi-texto">"Tener el historial sanitario y reproductivo de cada animal en el celular cambia la forma de tomar decisiones en el hato."</p>
+        <div class="testi-autor">
+          <span class="testi-avatar">JD</span>
+          <div><strong>Juan Diego Bermúdez</strong><span>Médico veterinario</span></div>
+        </div>
+      </article>
+      <article class="testi">
+        <p class="testi-texto">"Es la herramienta que le faltaba a la ganadería mediana en Colombia: completa, sencilla y a un precio que cualquier finca puede pagar."</p>
+        <div class="testi-autor">
+          <span class="testi-avatar">DJ</span>
+          <div><strong>Diego Jaramillo</strong><span>Ganadero y doctor</span></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ============ PREGUNTAS FRECUENTES ============ -->
+  <section id="faq" class="section faq reveal">
+    <div class="sectionHead">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2>Lo que los ganaderos siempre nos preguntan.</h2>
+    </div>
+    <div class="acordeon faq-lista">
+      <details>
+        <summary><span class="mod-icono">📶</span> ¿Necesito internet en la finca? <span class="flecha">▾</span></summary>
+        <p>Solo necesitas señal de datos en el celular al momento de registrar o consultar, como para usar WhatsApp. No necesitas computador, ni wifi, ni instalar nada: Bovix funciona desde el navegador del celular.</p>
+      </details>
+      <details>
+        <summary><span class="mod-icono">🐄</span> ¿Sirve si tengo pocas vacas? <span class="flecha">▾</span></summary>
+        <p>Sí. Bovix funciona igual con 10 que con 500 animales, y el precio es el mismo porque los animales son ilimitados. Entre más pronto empieces a registrar, más completo será el historial de tu hato.</p>
+      </details>
+      <details>
+        <summary><span class="mod-icono">👷</span> ¿Es difícil para mis trabajadores? <span class="flecha">▾</span></summary>
+        <p>No. Está diseñado para usarse en el potrero, con botones grandes y pantallas simples. Si tu trabajador sabe usar WhatsApp, sabe usar Bovix. Además cada usuario ve solo lo que necesita según su rol.</p>
+      </details>
+      <details>
+        <summary><span class="mod-icono">🔒</span> ¿Mis datos están seguros? ¿Y si me retiro? <span class="flecha">▾</span></summary>
+        <p>Tus datos se respaldan en la nube de Google con copias de seguridad automáticas todos los días. Y son tuyos: si algún día decides retirarte, te entregamos toda tu información de la finca.</p>
+      </details>
+      <details>
+        <summary><span class="mod-icono">📱</span> ¿Funciona en cualquier celular? <span class="flecha">▾</span></summary>
+        <p>Sí, en Android y iPhone, sin descargar nada de la tienda de aplicaciones. Entras desde el navegador con tu usuario y contraseña, y puedes dejar el acceso directo en la pantalla de inicio como si fuera una app.</p>
+      </details>
+      <details>
+        <summary><span class="mod-icono">💳</span> ¿Cómo se paga? ¿Hay contrato de permanencia? <span class="flecha">▾</span></summary>
+        <p>El pago es mes a mes y sin permanencia: si un mes no quieres seguir, simplemente no pagas. El primer mes es completamente gratis y no pedimos tarjeta para empezar.</p>
+      </details>
+      <details>
+        <summary><span class="mod-icono">🤝</span> ¿Qué pasa si necesito ayuda o algo no me funciona? <span class="flecha">▾</span></summary>
+        <p>Tienes soporte directo por WhatsApp con quienes construimos Bovix — no con un robot ni un call center. Y como usamos Bovix en nuestra propia finca, entendemos exactamente lo que necesitas.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- ============ CTA FINAL ============ -->
+  <section class="section finalCta reveal">
+    <h2>Tu ganadería merece la mejor herramienta.</h2>
+    <p>Escríbenos por WhatsApp, te creamos tu usuario y empiezas hoy mismo tu mes gratis.</p>
+    <div class="actions center">
+      <a class="btn grande" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20probar%20Bovix" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+      <a class="btn ghost" href="mailto:aplicacionbovix@gmail.com">aplicacionbovix@gmail.com</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="brand">
+    <svg class="brand-tag" viewBox="0 0 100 120" aria-hidden="true"><path d="M44 0H56V18H62C75 18 85 28 85 41V100C85 111 76 120 65 120H35C24 120 15 111 15 100V41C15 28 25 18 38 18H44V0Z"/></svg>
+    BOVIX
+  </div>
+  <p>© 2026 Bovix · Software para ganadería de leche y levante · Colombia 🇨🇴</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20informaci%C3%B3n%20de%20Bovix" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+  <svg viewBox="0 0 32 32" width="26" height="26" fill="currentColor" aria-hidden="true"><path d="M16 3C9.4 3 4 8.4 4 15c0 2.3.7 4.5 1.9 6.4L4 29l7.8-1.8c1.8 1 3.9 1.5 6 1.5 6.6 0 12-5.4 12-12S22.6 3 16 3zm0 22.5c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-4.6 1.1 1.1-4.5-.3-.4C5.4 18.4 4.9 16.7 4.9 15 4.9 8.9 9.9 4 16 4s11.1 4.9 11.1 11-5 10.5-11.1 10.5zm6.1-7.9c-.3-.2-2-1-2.3-1.1-.3-.1-.5-.2-.7.2s-.8 1.1-1 1.3c-.2.2-.4.2-.7.1-.3-.2-1.4-.5-2.7-1.7-1-.9-1.7-2-1.9-2.3-.2-.3 0-.5.1-.7l.5-.6c.2-.2.2-.3.3-.6.1-.2 0-.4 0-.6-.1-.2-.7-1.8-1-2.4-.3-.6-.5-.5-.7-.6h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.8s1.2 3.2 1.4 3.5c.2.2 2.4 3.7 5.9 5.2.8.4 1.5.6 2 .7.8.3 1.6.2 2.2.1.7-.1 2-.8 2.3-1.6.3-.8.3-1.5.2-1.6-.1-.2-.3-.3-.6-.4z"/></svg>
+</a>
+
+<script src="script.js"></script>
+</body>
+</html>
