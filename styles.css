@@ -292,6 +292,26 @@ h3{margin:10px 0}
   font-size:14.5px;
   border-radius:12px;
 }
+/* Badge de 30 días gratis en el Plan Integral */
+.plan-badge.badge-gratis{
+  background:var(--crema);
+  color:#3A2A00;
+  box-shadow:0 8px 22px rgba(244,239,221,.25);
+}
+.plan.integral{
+  border-color:rgba(244,239,221,.35);
+}
+
+/* Ítem destacado dentro de la lista de un plan */
+.li-destacado{
+  background:rgba(79,221,121,.1);
+  border:1px solid rgba(79,221,121,.28);
+  border-radius:12px;
+  padding:12px 14px !important;
+  margin-top:4px;
+  line-height:1.5 !important;
+}
+.li-destacado strong{color:var(--verde)}
 
 .planes-nota{
   text-align:center;
