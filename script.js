@@ -62,3 +62,14 @@ document.querySelectorAll('#menuPrincipal a').forEach(a => {
     document.getElementById('menuPrincipal').classList.remove('abierto');
   });
 });
+// Toggle de precio mensual/anual
+function cambiarPeriodo(periodo) {
+  var esMensual = periodo === 'mensual';
+  document.getElementById('btnMensual').classList.toggle('activo', esMensual);
+  document.getElementById('btnAnual').classList.toggle('activo', !esMensual);
+
+  document.querySelectorAll('.precio-mensual').forEach(function(el) { el.style.display = esMensual ? 'inline' : 'none'; });
+  document.querySelectorAll('.precio-anual').forEach(function(el) { el.style.display = esMensual ? 'none' : 'inline'; });
+  document.querySelectorAll('.precio-unidad-mensual').forEach(function(el) { el.style.display = esMensual ? 'inline' : 'none'; });
+  document.querySelectorAll('.precio-unidad-anual').forEach(function(el) { el.style.display = esMensual ? 'none' : 'inline'; });
+}
