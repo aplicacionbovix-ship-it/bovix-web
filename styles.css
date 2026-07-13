@@ -461,3 +461,36 @@ footer{
   footer{flex-direction:column;text-align:center}
   .prueba-social{gap:12px;font-size:12.5px}
 }
+.toggle-periodo {
+  display: inline-flex;
+  gap: 4px;
+  background: rgba(244,239,221,.08);
+  border: 1px solid var(--linea);
+  border-radius: 999px;
+  padding: 4px;
+  margin-top: 18px;
+}
+.toggle-btn {
+  border: none;
+  background: transparent;
+  color: var(--apagado);
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.toggle-btn.activo {
+  background: var(--verde);
+  color: #04220E;
+}
+.badge-ahorro {
+  font-size: 11px;
+  background: var(--crema);
+  color: #3A2A00;
+  padding: 2px 7px;
+  border-radius: 999px;
+  margin-left: 6px;
+  font-weight: 800;
+}
