@@ -494,3 +494,71 @@ footer{
   margin-left: 6px;
   font-weight: 800;
 }
+
+.agente-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  max-width: 900px;
+  margin: 0 auto 40px;
+}
+.agente-columna h3 {
+  font-family: Fraunces, serif;
+  font-size: 20px;
+  color: var(--texto);
+  margin-bottom: 16px;
+}
+.agente-lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 12px;
+}
+.agente-lista li {
+  background: #0E2517;
+  border: 1px solid var(--linea);
+  border-radius: 12px;
+  padding: 12px 16px;
+  font-size: 14.5px;
+  color: #DDEEDF;
+}
+.agente-ejemplo {
+  max-width: 480px;
+  margin: 0 auto 40px;
+  background: #0B1F13;
+  border: 1px solid var(--linea);
+  border-radius: 22px;
+  padding: 20px;
+}
+.agente-ejemplo-titulo {
+  text-align: center;
+  color: var(--apagado);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 14px;
+}
+.chat-burbuja {
+  max-width: 85%;
+  padding: 10px 14px;
+  border-radius: 12px;
+  font-size: 14px;
+  line-height: 1.4;
+  margin-bottom: 8px;
+}
+.chat-burbuja.entrante {
+  background: #1F2C34;
+  color: #E9EDEF;
+  margin-right: auto;
+  border-top-left-radius: 2px;
+}
+.chat-burbuja.saliente {
+  background: #005C4B;
+  color: #E9EDEF;
+  margin-left: auto;
+  border-top-right-radius: 2px;
+}
+
+@media(max-width: 700px) {
+  .agente-grid { grid-template-columns: 1fr; }
+}
