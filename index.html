@@ -204,7 +204,12 @@
     <div class="sectionHead center-head">
       <p class="eyebrow">Planes</p>
       <h2>Un plan para cada finca.</h2>
-      <p class="sub">Empieza gratis y crece cuando tu finca lo pida. Sin permanencia, sin sorpresas.</p>
+     <p class="sub">Empieza gratis y crece cuando tu finca lo pida. Sin permanencia, sin sorpresas.</p>
+
+      <div class="toggle-periodo">
+        <button class="toggle-btn activo" id="btnMensual" onclick="cambiarPeriodo('mensual')">Mensual</button>
+        <button class="toggle-btn" id="btnAnual" onclick="cambiarPeriodo('anual')">Anual <span class="badge-ahorro">Ahorra 2 meses</span></button>
+      </div>
     </div>
 
     <div class="planesGrid">
@@ -236,8 +241,10 @@
           <p class="plan-desc">Para fincas medianas que ya están en marcha.</p>
         </header>
         <div class="plan-precio">
-          <span class="precio-monto">$15.900</span>
-          <span class="precio-unidad">/ mes · después de la prueba</span>
+          <span class="precio-monto precio-mensual">$15.900</span>
+          <span class="precio-monto precio-anual" style="display:none;">$159.000</span>
+          <span class="precio-unidad precio-unidad-mensual">/ mes · después de la prueba</span>
+          <span class="precio-unidad precio-unidad-anual" style="display:none;">/ año · ahorras $31.800</span>
         </div>
         <ul class="plan-lista">
           <li>✅ Hasta 50 animales</li>
@@ -258,8 +265,10 @@
           <p class="plan-desc">Administra la finca desde WhatsApp con inteligencia artificial.</p>
         </header>
         <div class="plan-precio">
-          <span class="precio-monto">$34.900</span>
-          <span class="precio-unidad">/ mes</span>
+          <span class="precio-monto precio-mensual">$15.900</span>
+          <span class="precio-monto precio-anual" style="display:none;">$159.000</span>
+          <span class="precio-unidad precio-unidad-mensual">/ mes · después de la prueba</span>
+          <span class="precio-unidad precio-unidad-anual" style="display:none;">/ año · ahorras $31.800</span>
         </div>
         <ul class="plan-lista">
           <li>✅ <strong>Animales ilimitados</strong></li>
