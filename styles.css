@@ -562,3 +562,33 @@ footer{
 @media(max-width: 700px) {
   .agente-grid { grid-template-columns: 1fr; }
 }
+
+<!-- ############ BLOQUE 1B · CSS PARA LA FRANJA DE EXTRAS ############
+     Pega esto AL FINAL de styles.css. Usa nombres con prefijo bx-
+     para que no choque con nada de lo que ya tienes.
+================================================================= -->
+<!--
+.bx-extras{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:20px;
+  margin-top:34px;
+}
+.bx-extra{
+  border:1px solid rgba(0,0,0,.12);
+  border-radius:18px;
+  padding:26px 24px;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  align-items:flex-start;
+}
+.bx-extra-titulo{ margin:0; font-size:1.15rem; }
+.bx-extra-precio{ margin:0; font-weight:800; font-size:1.5rem; }
+.bx-extra-precio span{ font-size:.85rem; font-weight:500; opacity:.7; display:block; }
+.bx-extra-texto{ margin:0; opacity:.85; line-height:1.55; }
+.bx-extra .btn{ margin-top:auto; }
+@media (prefers-color-scheme: dark){
+  .bx-extra{ border-color:rgba(255,255,255,.16); }
+}
+-->
