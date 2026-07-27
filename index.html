@@ -199,111 +199,141 @@
     </div>
   </section>
 
+<!-- ############ BLOQUE 1 · SECCIÓN DE PLANES ############ -->
+
 <!-- ============ PLANES ============ -->
-  <section id="plan" class="section pricing reveal">
-    <div class="sectionHead center-head">
-      <p class="eyebrow">Planes</p>
-      <h2>Un plan para cada finca.</h2>
-     <p class="sub">Empieza gratis y crece cuando tu finca lo pida. Sin permanencia, sin sorpresas.</p>
+<section id="plan" class="section pricing reveal">
+  <div class="sectionHead center-head">
+    <p class="eyebrow">Planes</p>
+    <h2>El plan crece con tu hato.</h2>
+    <p class="sub">Pagas según los animales que administras. Sin permanencia, sin sorpresas.</p>
 
-      <div class="toggle-periodo">
-        <button class="toggle-btn activo" id="btnMensual" onclick="cambiarPeriodo('mensual')">Mensual</button>
-        <button class="toggle-btn" id="btnAnual" onclick="cambiarPeriodo('anual')">Anual <span class="badge-ahorro">Ahorra 2 meses</span></button>
+    <div class="toggle-periodo">
+      <button class="toggle-btn activo" id="btnMensual" onclick="cambiarPeriodo('mensual')">Mensual</button>
+      <button class="toggle-btn" id="btnAnual" onclick="cambiarPeriodo('anual')">Anual <span class="badge-ahorro">Ahorra 2 meses</span></button>
+    </div>
+  </div>
+
+  <div class="planesGrid">
+
+    <!-- FREE -->
+    <article class="plan">
+      <header class="plan-header">
+        <h3>Free</h3>
+        <p class="plan-desc">Para conocer Bovix con tu finca.</p>
+      </header>
+      <div class="plan-precio">
+        <span class="precio-monto">$0</span>
+        <span class="precio-unidad">gratis para siempre</span>
       </div>
-    </div>
+      <ul class="plan-lista">
+        <li>✅ Hasta 10 animales</li>
+        <li>✅ Todos los módulos activos</li>
+        <li>✅ Protocolos de eventos</li>
+        <li>✅ Soporte por WhatsApp</li>
+      </ul>
+      <a class="btn ghost plan-btn" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20empezar%20con%20el%20Plan%20Free%20de%20Bovix" target="_blank" rel="noopener">Empezar gratis</a>
+    </article>
 
-    <div class="planesGrid">
+    <!-- BÁSICO -->
+    <article class="plan">
+      <header class="plan-header">
+        <h3>Básico</h3>
+        <p class="plan-desc">Para fincas pequeñas que quieren dejar el cuaderno.</p>
+      </header>
+      <div class="plan-precio">
+        <span class="precio-monto precio-mensual">$29.900</span>
+        <span class="precio-monto precio-anual" style="display:none;">$299.000</span>
+        <span class="precio-unidad precio-unidad-mensual">/ mes · después de la prueba</span>
+        <span class="precio-unidad precio-unidad-anual" style="display:none;">/ año · ahorras $59.800</span>
+      </div>
+      <ul class="plan-lista">
+        <li>✅ Hasta 30 animales</li>
+        <li>✅ Todos los módulos activos</li>
+        <li>✅ Protocolos de eventos</li>
+        <li>✅ Soporte por WhatsApp</li>
+      </ul>
+      <a class="btn ghost plan-btn" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20activar%20mi%20mes%20gratis%20del%20Plan%20B%C3%A1sico%20de%20Bovix" target="_blank" rel="noopener">Empezar 30 días gratis</a>
+    </article>
 
-      <!-- FREE -->
-      <article class="plan">
-        <header class="plan-header">
-          <h3>Free</h3>
-          <p class="plan-desc">Para probar Bovix con tu finca.</p>
-        </header>
-        <div class="plan-precio">
-          <span class="precio-monto">$0</span>
-          <span class="precio-unidad">gratis para siempre</span>
-        </div>
-        <ul class="plan-lista">
-          <li>✅ Hasta 10 animales</li>
-          <li>✅ Todos los módulos activos</li>
-          <li>✅ Protocolos de eventos</li>
-          <li>✅ Soporte por WhatsApp</li>
-        </ul>
-        <a class="btn ghost plan-btn" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20empezar%20con%20el%20Plan%20Free%20de%20Bovix" target="_blank" rel="noopener">Empezar gratis</a>
-      </article>
+    <!-- INTEGRAL -->
+    <article class="plan integral">
+      <span class="plan-badge badge-gratis">🎁 30 días gratis</span>
+      <header class="plan-header">
+        <h3>Integral</h3>
+        <p class="plan-desc">Para fincas medianas que ya están en marcha.</p>
+      </header>
+      <div class="plan-precio">
+        <span class="precio-monto precio-mensual">$69.900</span>
+        <span class="precio-monto precio-anual" style="display:none;">$699.000</span>
+        <span class="precio-unidad precio-unidad-mensual">/ mes · después de la prueba</span>
+        <span class="precio-unidad precio-unidad-anual" style="display:none;">/ año · ahorras $139.800</span>
+      </div>
+      <ul class="plan-lista">
+        <li>✅ Hasta 100 animales</li>
+        <li>✅ Todos los módulos activos</li>
+        <li>✅ Protocolos de eventos</li>
+        <li>✅ Soporte por WhatsApp</li>
+        <li class="li-destacado">🔔 <strong>Alertas y notificaciones por WhatsApp</strong> — te avisamos de vencimientos, tareas y eventos importantes de tu finca</li>
+      </ul>
+      <a class="btn plan-btn" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20activar%20mi%20mes%20gratis%20del%20Plan%20Integral%20de%20Bovix" target="_blank" rel="noopener">Empezar 30 días gratis</a>
+    </article>
 
-      <!-- INTEGRAL -->
-      <article class="plan integral">
-        <span class="plan-badge badge-gratis">🎁 30 días gratis</span>
-        <header class="plan-header">
-          <h3>Integral</h3>
-          <p class="plan-desc">Para fincas medianas que ya están en marcha.</p>
-        </header>
-        <div class="plan-precio">
-          <span class="precio-monto precio-mensual">$15.900</span>
-          <span class="precio-monto precio-anual" style="display:none;">$159.000</span>
-          <span class="precio-unidad precio-unidad-mensual">/ mes · después de la prueba</span>
-          <span class="precio-unidad precio-unidad-anual" style="display:none;">/ año · ahorras $31.800</span>
-        </div>
-        <ul class="plan-lista">
-          <li>✅ Hasta 50 animales</li>
-          <li>✅ Todos los módulos activos</li>
-          <li>✅ Protocolos de eventos</li>
-          <li>✅ Soporte por WhatsApp</li>
-          <li>✅ 1 asesoría de levantamiento de datos</li>
-          <li class="li-destacado">🔔 <strong>Alertas y notificaciones por WhatsApp</strong> — te avisamos de vencimientos, tareas y eventos importantes de tu finca</li>
-        </ul>
-        <a class="btn plan-btn" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20activar%20mi%20mes%20gratis%20del%20Plan%20Integral%20de%20Bovix" target="_blank" rel="noopener">Empezar 30 días gratis</a>
-      </article>
+    <!-- ELITE (destacado) -->
+    <article class="plan destacado">
+      <span class="plan-badge">⭐ Más completo</span>
+      <header class="plan-header">
+        <h3>Elite</h3>
+        <p class="plan-desc">Para hatos grandes. Administra la finca desde WhatsApp con inteligencia artificial.</p>
+      </header>
+      <div class="plan-precio">
+        <span class="precio-monto precio-mensual">$139.900</span>
+        <span class="precio-monto precio-anual" style="display:none;">$1.399.000</span>
+        <span class="precio-unidad precio-unidad-mensual">/ mes</span>
+        <span class="precio-unidad precio-unidad-anual" style="display:none;">/ año · ahorras $279.800</span>
+      </div>
+      <ul class="plan-lista">
+        <li>✅ <strong>Animales ilimitados</strong></li>
+        <li>✅ Todo lo del Plan Integral</li>
+        <li>✅ <strong>Administración por WhatsApp con IA</strong></li>
+        <li>✅ Registra y consulta hablando en lenguaje natural</li>
+        <li>✅ Alertas inteligentes según lo que pasa en la finca</li>
+        <li>✅ Soporte prioritario</li>
+      </ul>
+      <a class="btn plan-btn" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20activar%20el%20Plan%20Elite%20de%20Bovix" target="_blank" rel="noopener">Activar Elite</a>
+    </article>
 
-     <!-- ELITE (destacado) -->
-      <article class="plan destacado">
-        <span class="plan-badge">⭐ Más completo</span>
-        <header class="plan-header">
-          <h3>Elite</h3>
-          <p class="plan-desc">Administra la finca desde WhatsApp con inteligencia artificial.</p>
-        </header>
-        <div class="plan-precio">
-          <span class="precio-monto precio-mensual">$34.900</span>
-          <span class="precio-monto precio-anual" style="display:none;">$349.000</span>
-          <span class="precio-unidad precio-unidad-mensual">/ mes</span>
-          <span class="precio-unidad precio-unidad-anual" style="display:none;">/ año · ahorras $69.800</span>
-        </div>
-        <ul class="plan-lista">
-          <li>✅ <strong>Animales ilimitados</strong></li>
-          <li>✅ Todo lo del Plan Integral</li>
-          <li>✅ <strong>Administración por WhatsApp con IA</strong></li>
-          <li>✅ Registra y consulta hablando en lenguaje natural</li>
-          <li>✅ Alertas inteligentes según lo que pasa en la finca</li>
-          <li>✅ Soporte prioritario</li>
-        </ul>
-        <a class="btn plan-btn" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20activar%20el%20Plan%20Elite%20de%20Bovix" target="_blank" rel="noopener">Activar Elite</a>
-      </article>
+  </div>
 
-      <!-- VETERINARIOS -->
-      <article class="plan veterinarios">
-        <header class="plan-header">
-          <h3>Veterinarios</h3>
-          <p class="plan-desc">Para veterinarios que recomiendan Bovix a sus clientes ganaderos.</p>
-        </header>
-        <div class="plan-precio">
-          <span class="precio-monto">Comisión</span>
-          <span class="precio-unidad">por cada finca referida</span>
-        </div>
-        <ul class="plan-lista">
-          <li>✅ Comisión por cada cliente que refieras</li>
-          <li>✅ Acceso completo a Bovix para tu trabajo profesional</li>
-          <li>✅ Material para presentar Bovix a tus clientes</li>
-          <li>✅ Soporte directo del equipo Bovix</li>
-        </ul>
-        <a class="btn ghost plan-btn" href="https://wa.me/573203867079?text=Hola%2C%20soy%20veterinario%20y%20quiero%20informaci%C3%B3n%20del%20Plan%20Veterinarios%20de%20Bovix" target="_blank" rel="noopener">Quiero ser aliado</a>
-      </article>
+  <!-- SERVICIO APARTE + ALIADOS -->
+  <div class="bx-extras">
 
-    </div>
+    <article class="bx-extra">
+      <h3 class="bx-extra-titulo">📥 Levantamiento de datos</h3>
+      <p class="bx-extra-precio">$300.000 <span>pago único</span></p>
+      <p class="bx-extra-texto">
+        Nosotros dejamos tu finca cargada y lista para trabajar: censo completo de animales,
+        historial sanitario, estado reproductivo y potreros. Tú solo entras y empiezas a usarla.
+        Disponible para cualquier plan de pago.
+      </p>
+      <a class="btn ghost" href="https://wa.me/573203867079?text=Hola%2C%20quiero%20informaci%C3%B3n%20del%20levantamiento%20de%20datos%20de%20Bovix" target="_blank" rel="noopener">Cotizar mi finca</a>
+    </article>
 
-   <p class="planes-nota">Sin permanencia. Cancelas cuando quieras. Todos los planes incluyen respaldo en la nube.</p>
-  </section>
+    <article class="bx-extra">
+      <h3 class="bx-extra-titulo">🤝 Veterinarios aliados</h3>
+      <p class="bx-extra-precio">Comisión <span>por cada finca referida</span></p>
+      <p class="bx-extra-texto">
+        Si eres veterinario, ganas una comisión por cada cliente que traigas y usas Bovix
+        gratis para tu trabajo profesional. Te damos el material para presentarlo y soporte directo.
+      </p>
+      <a class="btn ghost" href="https://wa.me/573203867079?text=Hola%2C%20soy%20veterinario%20y%20quiero%20informaci%C3%B3n%20del%20Plan%20Veterinarios%20de%20Bovix" target="_blank" rel="noopener">Quiero ser aliado</a>
+    </article>
+
+  </div>
+
+  <p class="planes-nota">Sin permanencia. Cancelas cuando quieras. Todos los planes incluyen respaldo en la nube. Si tu hato crece, cambias de plan cuando quieras.</p>
+</section>
+
 
   <!-- ============ AGENTE DE WHATSAPP ============ -->
   <section id="agente-ia" class="section reveal">
